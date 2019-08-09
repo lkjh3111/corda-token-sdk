@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8ce15df8-9faa-46ad-9df0-7262be8092b6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/LICENCE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRADEMARK" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/src/main/kotlin/com/template/Client.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/src/main/kotlin/com/template/webserver/Controller.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/src/main/kotlin/com/template/webserver/NodeRPCConnection.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/src/main/kotlin/com/template/webserver/Server.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/src/main/resources/static/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/dev/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/test/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/META-INF/contracts.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/ExampleEvolvableTokenTypeContract.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/RealEstateEvolvableTokenTypeContract.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/states/ExampleEvolvableTokenType$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/states/ExampleEvolvableTokenType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/states/RealEstateEvolvableTokenType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/types/ExampleFixedTokenType$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/classes/kotlin/main/com/template/types/ExampleFixedTokenType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/kotlin/contracts01jar-classes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/libs/contracts-0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/resources/main/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/ExampleEvolvableTokenTypeContract.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/RealEstateEvolvableTokenTypeContract.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/ExampleEvolvableTokenType.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/states/RealEstateEvolvableTokenType.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/src/main/kotlin/com/template/types/ExampleFixedTokenType.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/src/test/kotlin/com/template/ContractTests.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/quasar.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/META-INF/workflows.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/CreateExampleEvolvableToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/ExampleFlowWithEvolvableToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/ExampleFlowWithFixedToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/RealEstateEvolvableFungibleTokenFlow$CreateEvolvableFungibleTokenFlow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/RealEstateEvolvableFungibleTokenFlow$IssueEvolvableFungibleTokenFlow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/RealEstateEvolvableFungibleTokenFlow$MoveEvolvableFungibleTokenFlow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/RealEstateEvolvableFungibleTokenFlow$RedeemHouseFungibleTokenFlow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/RealEstateEvolvableFungibleTokenFlow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/RealEstateEvolvableNonFungibleTokenFlow$CreateEvolvableTokenFlow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/RealEstateEvolvableNonFungibleTokenFlow$IssueEvolvableTokenFlow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/RealEstateEvolvableNonFungibleTokenFlow$MoveEvolvableTokenFlow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/RealEstateEvolvableNonFungibleTokenFlow$RedeemHouseToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/classes/kotlin/main/com/template/flows/RealEstateEvolvableNonFungibleTokenFlow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/kotlin/workflows01jar-classes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/libs/workflows-0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/resources/main/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/src/integrationTest/kotlin/com/template/DriverBasedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/src/main/kotlin/com/template/flows/ExampleFlowWithEvolvableToken.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/src/main/kotlin/com/template/flows/ExampleFlowWithFixedToken.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/src/main/kotlin/com/template/flows/RealEstateEvolvableFungibleTokenFlow.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/src/main/kotlin/com/template/flows/RealEstateEvolvableNonFungibleTokenFlow.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/ContractTests.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/FlowTests.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/src/test/kotlin/com/template/NodeDriver.kt" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/classes/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/clients/.gradle/" />
+    <ignored path="$PROJECT_DIR$/clients/build/" />
+    <ignored path="$PROJECT_DIR$/clients/out/" />
+    <ignored path="$PROJECT_DIR$/contracts/.gradle/" />
+    <ignored path="$PROJECT_DIR$/contracts/build/" />
+    <ignored path="$PROJECT_DIR$/contracts/out/" />
+    <ignored path="$PROJECT_DIR$/workflows/.gradle/" />
+    <ignored path="$PROJECT_DIR$/workflows/build/" />
+    <ignored path="$PROJECT_DIR$/workflows/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/gradle.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="676" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="corda-token-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corda-token-sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="corda-token-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corda-token-sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="corda-token-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corda-token-sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="contracts" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="corda-token-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corda-token-sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="contracts" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="corda-token-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corda-token-sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="contracts" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="corda-token-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corda-token-sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="contracts" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="corda-token-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corda-token-sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="contracts" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ce15df8-9faa-46ad-9df0-7262be8092b6" name="Default Changelist" comment="" />
+      <created>1565310502665</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565310502665</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Build" weight="0.3289689" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

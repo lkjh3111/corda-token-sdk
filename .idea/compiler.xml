@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="corda-token-sdk.clients.main" target="1.8" />
+      <module name="corda-token-sdk.clients.test" target="1.8" />
+      <module name="corda-token-sdk.contracts.main" target="1.8" />
+      <module name="corda-token-sdk.contracts.test" target="1.8" />
+      <module name="corda-token-sdk.main" target="1.8" />
+      <module name="corda-token-sdk.test" target="1.8" />
+      <module name="corda-token-sdk.workflows.integrationTest" target="1.8" />
+      <module name="corda-token-sdk.workflows.main" target="1.8" />
+      <module name="corda-token-sdk.workflows.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
