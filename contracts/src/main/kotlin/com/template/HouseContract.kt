@@ -12,8 +12,9 @@ class HouseContract : EvolvableTokenContract(), Contract {
     override fun additionalCreateChecks(tx: LedgerTransaction) {
         // Not much to do for this example token.
         val newHouse = tx.outputStates.single() as HouseState
+        //val valuation = newHouse.valuation
         newHouse.apply {
-            require(valuation > Amount.zero(valuation.token)) { "Valuation must be greater than zero." }
+            require(valuation > 0) { "Valuation must be greater than zero." }
         }
     }
 
@@ -21,6 +22,6 @@ class HouseContract : EvolvableTokenContract(), Contract {
         val oldHouse = tx.inputStates.single() as HouseState
         val newHouse = tx.outputStates.single() as HouseState
         require(oldHouse.address == newHouse.address) { "The address cannot change." }
-        require(newHouse.valuation > Amount.zero(newHouse.valuation.token)) { "Valuation must be greater than zero." }
+        require(newHouse.valuation > 0) { "Valuation must be greater than zero." }
     }
 }

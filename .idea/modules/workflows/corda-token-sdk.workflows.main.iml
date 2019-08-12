@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module version="4">
-  <component name="ExternalSystem" externalSystem="GRADLE" externalSystemModuleGroup="com.template" externalSystemModuleType="sourceSet" externalSystemModuleVersion="0.1" linkedProjectId=":workflows:main" linkedProjectPath="$MODULE_DIR$/../../../workflows" rootProjectPath="$MODULE_DIR$/../../.." />
   <component name="FacetManager">
     <facet type="kotlin-language" name="Kotlin">
       <configuration version="3" platform="JVM 1.8" useProjectSettings="false">

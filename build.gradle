@@ -21,6 +21,10 @@ buildscript {
         mavenCentral()
         jcenter()
         maven { url 'https://ci-artifactory.corda.r3cev.com/artifactory/corda' }
+        repositories {
+            maven { url 'https://ci-artifactory.corda.r3cev.com/artifactory/corda-lib' }
+            maven { url 'https://ci-artifactory.corda.r3cev.com/artifactory/corda-lib-dev' }
+        }
     }
 
     dependencies {
@@ -95,6 +99,7 @@ dependencies {
     testCompile "org.apache.logging.log4j:log4j-web:${log4j_version}"
 
     // Token SDK dependencies.
+    cordapp "$tokens_release_group:tokens-money:$tokens_release_version"
     cordapp "$tokens_release_group:tokens-contracts:$tokens_release_version"
     cordapp "$tokens_release_group:tokens-workflows:$tokens_release_version"
     cordapp "$tokens_release_group:tokens-money:$tokens_release_version"

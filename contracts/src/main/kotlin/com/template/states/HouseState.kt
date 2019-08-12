@@ -12,7 +12,8 @@ import java.util.*
 @BelongsToContract(HouseContract::class)
 data class HouseState(
         val address: String,
-        val valuation: Amount<Currency>,
+        val valuation: Long,
+        val currency: String,
         override val maintainers: List<Party>,
         override val fractionDigits: Int = 0,
         override val linearId: UniqueIdentifier
