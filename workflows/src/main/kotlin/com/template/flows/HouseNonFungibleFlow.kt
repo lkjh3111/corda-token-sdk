@@ -28,7 +28,7 @@ import java.util.*
 @StartableByRPC
     class CreateNonFungibleHouseTokenFlow(private val address: String,
                                           private val valuation: Long,
-                                          private val currency: String) : FlowLogic<SignedTransaction>() {
+                                          private val currency: String) : Test() {
         override val progressTracker = ProgressTracker()
         @Suspendable
         override fun call(): SignedTransaction {
@@ -40,8 +40,8 @@ import java.util.*
     }
 
     @StartableByRPC
-    class IssueNonFungibleHouseTokenFlow(private val tokenId: UniqueIdentifier,
-                                         private val holder: Party) : FlowLogic<SignedTransaction>() {
+    class IssueNonFungibleHouseTokenFlow(private val holder: String,
+                                         private val tokenId: UniqueIdentifier) : Test() {
     @Suspendable
     @Throws(FlowException::class)
     override fun call(): SignedTransaction {
@@ -50,24 +50,24 @@ import java.util.*
         val houseToken = state.data
         val tokenPointer = houseToken.toPointer(houseToken.javaClass)
         val issuedTokenType = IssuedTokenType(ourIdentity, tokenPointer)
-        val nonFungibleToken = NonFungibleToken(issuedTokenType, holder, UniqueIdentifier(), tokenPointer.getAttachmentIdForGenericParam())
+        val nonFungibleToken = NonFungibleToken(issuedTokenType, stringToParty(holder), UniqueIdentifier(), tokenPointer.getAttachmentIdForGenericParam())
         return subFlow(IssueTokens(ImmutableList.of(nonFungibleToken)))
         }
     }
 @StartableByRPC
 class IssueTokenFlow(private val amount: Long,
                      private val currency: String,
-                     private val recipient: Party) : FlowLogic<SignedTransaction>() {
+                     private val recipient: String) : Test() {
     @Suspendable
     @Throws(FlowException::class)
     override fun call(): SignedTransaction {
         val token = FiatCurrency.getInstance(currency)
-        return subFlow(IssueTokens(listOf(amount of token issuedBy ourIdentity heldBy recipient )))
+        return subFlow(IssueTokens(listOf(amount of token issuedBy ourIdentity heldBy stringToParty(recipient) )))
     }
 }
 
     @StartableByRPC
-    class MoveNonFungibleHouseTokenFlow(private val tokenId: UniqueIdentifier, private val holder: Party) : FlowLogic<SignedTransaction>() {
+    class MoveNonFungibleHouseTokenFlow(private val holder: String, private val tokenId: UniqueIdentifier) : Test() {
 
         @Suspendable
         @Throws(FlowException::class)
@@ -76,14 +76,14 @@ class IssueTokenFlow(private val amount: Long,
             val (state) = serviceHub.vaultService.queryBy(HouseState::class.java, queryCriteria).states[0]
             val houseToken = state.data
             val tokenPointer = houseToken.toPointer(houseToken.javaClass)
-            val partyAndToken = PartyAndToken(holder, tokenPointer)
+            val partyAndToken = PartyAndToken(stringToParty(holder), tokenPointer)
             return subFlow<Any>(MoveNonFungibleTokens(partyAndToken)) as SignedTransaction
         }
     }
 
 
     @StartableByRPC
-    class RedeemNonFungibleHouseTokenFlow(private val tokenId: UniqueIdentifier, private val issuer: Party) : FlowLogic<SignedTransaction>() {
+    class RedeemNonFungibleHouseTokenFlow(private val issuer: String, private val tokenId: UniqueIdentifier ) : Test() {
 
         @Suspendable
         @Throws(FlowException::class)
@@ -92,13 +92,13 @@ class IssueTokenFlow(private val amount: Long,
             val (state) = serviceHub.vaultService.queryBy(HouseState::class.java, queryCriteria).states[0]
             val houseState = state.data
             val token = houseState.toPointer(houseState.javaClass)
-            return subFlow(RedeemNonFungibleTokens(token, issuer))
+            return subFlow(RedeemNonFungibleTokens(token, stringToParty(issuer)))
         }
     }
 
     @StartableByRPC
     class UpdateNonFungibleHouseTokenFlow(private val new_valuation: Long,
-                                          private val tokenId: UniqueIdentifier) : FlowLogic<SignedTransaction>() {
+                                          private val tokenId: UniqueIdentifier) : Test() {
 
         @Suspendable
         @Throws(FlowException::class)
