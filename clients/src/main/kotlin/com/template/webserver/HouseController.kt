@@ -205,12 +205,12 @@ class HouseController(
 
 
     @PostMapping(value = "/sell-house", produces = arrayOf("application/json"))
-    private fun sellhouse(@RequestBody sellhouse: SellHouse): ResponseEntity<Map<String, Any>> {
+    private fun sellHouse(@RequestBody sellHouse: SellHouse): ResponseEntity<Map<String, Any>> {
 
         val (status, result) = try {
             val sell = SellHouse(
-                    buyer = sellhouse.buyer,
-                    houseId = sellhouse.houseId
+                    buyer = sellHouse.buyer,
+                    houseId = sellHouse.houseId
             )
             proxy.startFlowDynamic(
                     SellHouseFlow::class.java,
@@ -224,9 +224,9 @@ class HouseController(
         }
         val stat = "status" to status.value()
         val mess = if (status == HttpStatus.CREATED) {
-            "message" to "Successful in creating ContractState of type UserState"
+            "message" to "Successful in selling House Token"
         } else {
-            "message" to "Failed to create ContractState of type UserState"
+            "message" to "Failed to sell House Token"
         }
         val res = "result" to result
         return ResponseEntity.status(status).body(mapOf(stat, mess, res))
@@ -294,6 +294,9 @@ class HouseController(
         return ResponseEntity.status(status).body(mapOf(stat, mess, res))
 
     }
+
+
+
     @PostMapping(value = "/update-house-valuation", produces = arrayOf("application/json"))
     private fun updateHouse(@RequestBody updateHouse: UpdateHouseValuation): ResponseEntity<Map<String, Any>> {
 

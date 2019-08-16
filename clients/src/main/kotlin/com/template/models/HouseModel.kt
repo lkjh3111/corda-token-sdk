@@ -39,7 +39,7 @@ data class IssueToken @JsonCreator constructor(
 
 data class SellHouse @JsonCreator constructor(
         val buyer: String,
-        val houseId: String
+        val houseId: UniqueIdentifier
 )
 
 data class MoveHouse @JsonCreator constructor(
@@ -52,6 +52,7 @@ data class RedeemHouse @JsonCreator constructor(
         val issuer: String,
         val houseId: UniqueIdentifier
 )
+
 
 data class UpdateHouseValuation @JsonCreator constructor(
         val new_valuation: Long,
